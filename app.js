@@ -44,11 +44,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // set view engine
-app.set("views", path.join(__dirname, "views"));
+app.set("views", path.join(__dirname + "/views"));
 app.set("view engine", "ejs");
 
 // set static folder
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname + "public")));
 
 // parse cookies
 app.use(cookieParser(process.env.COOKIE_SECRET));
