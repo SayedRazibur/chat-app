@@ -4,8 +4,8 @@
   "description": "Learn with Sumit Node.js Chat Application",
   "main": "app.js",
   "scripts": {
-    "start": "set NODE_ENV=development && nodemon app.js",
-    "prod": "set NODE_ENV=production && node app.js"
+    "start": "set NODE_ENV=development app.js",
+    "prod": "set NODE_ENV=production app.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
