@@ -31,7 +31,7 @@ const addUserValidators = [
     }),
   check("mobile")
     .isMobilePhone("bn-BD", {
-      strictMode: true,
+      strictMode: false,
     })
     .withMessage("Mobile number must be a valid Bangladeshi mobile number")
     .custom(async (value) => {

@@ -65,7 +65,7 @@ async function removeUser(req, res, next) {
       unlink(
         path.join(__dirname, `/../public/uploads/avatars/${user.avatar}`),
         (err) => {
-          if (err) console.log(err);
+          // if (err) console.log(err);
         }
       );
     }
